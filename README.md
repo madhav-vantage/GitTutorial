@@ -25,6 +25,7 @@ Other reference sources: [W3 schools](https://www.w3schools.com/git/default.asp)
 * ```git commit -m <commit message>```: Commits the changes from staging area to local repo for permanent tracking. Make sure to add good commit messages for easier tracking.
 * ```git log``` or ```git log --oneline```: Shows the git commit history and the HEAD location
 * ```git status```: Show the files that are changed since last commit. If the files are in red, it means they are not yet added to the staging. If the files are in green, it means they are added to staging and waiting to be commited.
+* ```git diff <commithash1> <commithash2>```: Shows the changes made in everyfile tracked by git between the 2 branches.
 
 ### Other changes to make
 * ```git global --config user.name <name>```: Adds your username in quotes for tracking in logs
@@ -46,3 +47,4 @@ These are essential to keep track when working collaboratively.
 ## Going back to earlier commits
 * ```git checkout <commit hash>```: This moves the HEAD to a past commit for **View only**. Need to create a new branch, make changes and then merge into main
 * ```git revert <commit hash>```: **This is the safest way to move back in the change history. This is not view only, this actually changes the code permanently to the hash provided. However instead of deleting any history, this creates a new commit so that the action of revert is also preserved in git log.**
+Note: When using git cli, revert operation opens a vim editor to write descriptio for the commit messages. Write your message then hit ```Esc``` and write ```:wq``` to save the message and close the editor.
