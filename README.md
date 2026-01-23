@@ -19,7 +19,7 @@ Other reference sources: [W3 schools](https://www.w3schools.com/git/default.asp)
 * ```git init```: Initializes the Git environment
 * ```git branch -m main```: By default Git creates 'master' branch, bu Github creates it as 'main'. To maintain consistency this command renames the master branch to main
 * ```git pull```: If remote repository is already setup. This downloads the latest branch from the remote repository. This only changes the current branch the HEAD is pointing to.
-* Create .gitignore: Create this file to list the files/folders that shouldn't be tracked by Git. Typically these could be .sbproj, data files 
+* Create .gitignore: Create this file to list the files/folders that shouldn't be tracked by Git. Typically these could be .sbproj, data files . **After creating the .gitignore add it with ```git add``` so that the file is tracked by git and everyone in the collaboration has the same setup.
 * ```git branch <branch name>```: Creates a new branch. **Ideally always create a new branch to make the changes. Push only this branch after making local commits and then create a Pull Request (PR) on Github for the administrator to verify changes and merge into main branch.**
 * ```git add <filename>``` or ```git add *```: Add the file changes to the staging area
 * ```git commit -m <commit message>```: Commits the changes from staging area to local repo for permanent tracking. Make sure to add good commit messages for easier tracking.
