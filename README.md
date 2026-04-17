@@ -37,6 +37,7 @@ These are essential to keep track when working collaboratively.
 * ```git merge <branch name>```: Updates main branch with content of <branch name>
 
 ## Setting up the connection to remote branch (Using Github as the example only here)
+* Ensure that the email id in your local repo is matching with the remote email id or added as a collaborator. Without this git push wont work.
 * ```git add origin <github repo link>```: Adds the location of the remote repo
 * ```git clone <github repo link>```: Use this if there is a github repo already created and you want to build on it. This downloads the entire branches, commits into local repo.
 
